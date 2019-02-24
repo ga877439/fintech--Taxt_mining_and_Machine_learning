@@ -9,7 +9,7 @@
 * 學習BeautifulSoup
 * 學習爬蟲基礎
 * 練習爬蟲--爬取各大學財金系所的師資們之姓名與郵件地址
-* 寫HW0--<a href = 'https://github.com/MiccWan/Political-News-Analysis/tree/master/crawler' rel='nofollow'>Political-News-Analysis/tree/master/crawler</a> 之中 <a href = 'https://github.com/MiccWan/Political-News-Analysis/blob/master/crawler/new_talk_crawler.ipynb' rel='nofollow'>liberty_times_crawler.ipynb</a> 的註解
+* 寫HW0--[Political-News-Analysis/tree/master/crawler](https://github.com/MiccWan/Political-News-Analysis/tree/master/crawler)之中 <a href = 'https://github.com/MiccWan/Political-News-Analysis/blob/master/crawler/new_talk_crawler.ipynb' rel='nofollow'>liberty_times_crawler.ipynb</a> 的註解
 
 
 
