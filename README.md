@@ -15,6 +15,6 @@ Week 1
 
 練習爬蟲--爬取各大學財金系所的師資們之姓名與郵件地址
 
-寫HW0--Political-News-Analysis/tree/master/crawler 的註解
+寫HW0--Political-News-Analysis/tree/master/crawler 之中 liberty_times_crawler.ipynb 的註解
 
 
