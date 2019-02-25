@@ -12,7 +12,7 @@
 * 學習爬蟲基礎
 * 練習爬蟲--爬取各大學財金系所的師資們之姓名與郵件地址
 * 學習 *Markdown*
-* 寫HW0--[Political-News-Analysis/tree/master/crawler](https://github.com/MiccWan/Political-News-Analysis/tree/master/crawler)之中 <a href = 'https://github.com/MiccWan/Political-News-Analysis/blob/master/crawler/new_talk_crawler.ipynb' rel='nofollow'>liberty_times_crawler.ipynb</a> 的[**註解**](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_understanding_TAs_code.py)及**流程圖**。
+* 寫HW0--[Political-News-Analysis/tree/master/crawler](https://github.com/MiccWan/Political-News-Analysis/tree/master/crawler)之中 <a href = 'https://github.com/MiccWan/Political-News-Analysis/blob/master/crawler/new_talk_crawler.ipynb' rel='nofollow'>liberty_times_crawler.ipynb</a> 的[**註解**](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_understanding_TAs_code.py)及**[流程圖](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/data/HW0_Diagram.png)**。
 * 學習python *多線程*以及*多進程*
 
 
