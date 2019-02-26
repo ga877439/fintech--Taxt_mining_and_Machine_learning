@@ -39,7 +39,7 @@ def get_urls(document):
 
 async def getPage(url,data,date, li_title):
 #異步抓取url 
-	print(url)
+
 	async with aiohttp.ClientSession() as session:	
 		async with session.get(url) as response:
 
@@ -77,24 +77,25 @@ for date in dates:
 	doc = bs(res.text, 'lxml')
 	url_list, title = get_urls(doc)	#取得某一天政治業面的所有urls
 	data = []
-	loop = asyncio.get_event_loop()			
+	loop = asyncio.get_event_loop()
+
 				
 	tasks = [getPage(url_list[i],data,date,title[i]) for i in range(len(url_list))]			
 	loop.run_until_complete(asyncio.wait(tasks))
 	
+	
 	all_data += data	
-print('Total time consumed is %s seconds' %( time.time()-t1 )	)	#Total time consumed is 222.6810507774353 seconds
-# print(all_data)
+print('Total time consumed in way of aiohttp is %s seconds' %( time.time()-t1 )	)	#Total time consumed in way of aiohttp is 193.81894159317017 seconds
+print(len(all_data))	#1660
 
 
 
-import pickle	
+# import pickle	
 
-with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
-	pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡		
+# with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
+	# pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡		
 
 import pandas as pd
 
 df = pd.DataFrame(all_data)[['date', 'title', 'link', 'content', 'tags']]	
 print(df.head(n=10))
-

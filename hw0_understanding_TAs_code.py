@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 start_date = "2018-07-01"
-stop_date = "2018-07-03"
+stop_date = "2018-12-31"
 	
 start = datetime.strptime(start_date, "%Y-%m-%d")	# datetime.strptime(date_string, format) return a datetime object
 stop = datetime.strptime(stop_date, "%Y-%m-%d")
@@ -72,16 +72,20 @@ def process_document(document, date):	#document 是 request庫抓取text 之後�
 		})
 	return data
 	
-cnt = 0
+
 all_data = list()
+import time
+t1 = time.time()	#紀錄爬取所花費的時間
 for date in dates:	#dates 是一個list，每個element是 datetime object 範圍從start到stop
 	print('start crawling :', date)
 	res = requests.get('https://news.ltn.com.tw/list/newspaper/politics/' + date)	#爬取每日政治新聞，鏈接規則類似 'https://news.ltn.com.tw/list/newspaper/politics/20181230'
 	doc = bs(res.text, 'lxml')
 	data = process_document(doc, date)	#把bs4 及時間放入該函數後，可以回傳一個list，list中每個element是字典
 	all_data += data	#list 可以相加
-	
-# print(all_data[0:5])
+print('Total time consumed in normal way is %s seconds' %( time.time()-t1 )	)	#Total time consumed in normal way is 780.1049983501434 seconds
+print(len(all_data))	#1660
+
+
 
 import pickle	
 
