@@ -85,26 +85,15 @@ for date in dates:	#dates 是一個list，每個element是 datetime object 範�
 print('Total time consumed in normal way is %s seconds' %( time.time()-t1 )	)	#Total time consumed in normal way is 780.1049983501434 seconds
 print(len(all_data))	#1660
 
-
-
-import pickle	
-
-with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
-	pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡
 	
-	
-import pandas as pd
-
-df = pd.DataFrame(all_data)[['date', 'title', 'link', 'content', 'tags']]	
-print(df.head())	#DataFrame.head(n=5) return the first n rows
-# print(df)
-
-
-
 #使用讀好的pickle檔案；
 # with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'rb') as f:	
 	# all_saved_data = pickle.load(f)
 
+import pandas as pd
+
+df = pd.DataFrame(all_data)[['date', 'title', 'link', 'content', 'tags']]	
+print(df.head())	#DataFrame.head(n=5) return the first n rows
 
 
 
