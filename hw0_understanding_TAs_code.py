@@ -7,14 +7,14 @@ start = datetime.strptime(start_date, "%Y-%m-%d")	# datetime.strptime(date_strin
 stop = datetime.strptime(stop_date, "%Y-%m-%d")
 
 dates = list()
-while start <= stop:	#迴圈~ start time 每加一天都一天都check是否有超過stop_date
+while start <= stop:	#迴圈~ start time 每加一天都check是否有超過stop_date
 	dates.append(start.strftime('%Y%m%d'))	#object.strftime(format) return a string representing the date of the object in the specific format.
 	start = start + timedelta(days=1)	#timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) is a time shift.
 	
 import requests
 from bs4 import BeautifulSoup as bs
 
-def process_document(document, date):	#document 是 request庫裝取之後的 BeautifulSoup(r.text, 'lxml')	
+def process_document(document, date):	#document 是 request庫抓取text 之後的 BeautifulSoup(r.text, 'lxml')	返回值
 	
 
 	nodes = document.select('ul.list > li')	
@@ -93,7 +93,7 @@ import pandas as pd
 
 df = pd.DataFrame(all_data)[['date', 'title', 'link', 'content', 'tags']]	
 print(df.head())	#DataFrame.head(n=5) return the first n rows
-print(df)
+# print(df)
 
 
 
