@@ -86,9 +86,9 @@ print('Total time consumed in normal way is %s seconds' %( time.time()-t1 )	)	#T
 print(len(all_data))	#1660
 
 	
-#使用讀好的pickle檔案；
-# with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'rb') as f:	
-	# all_saved_data = dump.load(f)
+#將檔案存成pickle檔案；
+# with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
+	# pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡		
 
 import pandas as pd
 
