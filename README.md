@@ -3,7 +3,7 @@
 
 ## 自介
 你好\
-我叫陳昱誠，我是財金所碩二學生，這學期修了人工智慧、大數據分析以及這門課。
+我叫陳昱誠，我是財金所碩二學生，這學期修了[人工智慧](https://github.com/ga877439/AI_class)、[大數據分析](https://github.com/ga877439/Big-Data-and-Business-Analytics)以及這門課。
 
 ## Week 1
 
@@ -16,6 +16,7 @@
 * 寫HW0--[Political-News-Analysis/tree/master/crawler](https://github.com/MiccWan/Political-News-Analysis/tree/master/crawler)之中 [liberty_times_crawler.ipynb](https://github.com/MiccWan/Political-News-Analysis/blob/master/crawler/liberty_times_crawler.ipynb) 的[**註解**](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_understanding_TAs_code.py)及[**流程圖**](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/img/HW0_Diagram.png)。
 * 使用[aiohttp](https://aiohttp.readthedocs.io/en/stable/)來[加速hw0的爬蟲](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_modification.py)
 * 使用多線程加上aiohttp來[再次加速hw0的爬蟲](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_modification2.py)
+* 看完指定的影片
 
 
 
