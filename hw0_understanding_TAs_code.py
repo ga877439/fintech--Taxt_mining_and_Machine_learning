@@ -88,7 +88,7 @@ print(len(all_data))	#1660
 	
 #使用讀好的pickle檔案；
 # with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'rb') as f:	
-	# all_saved_data = pickle.load(f)
+	# all_saved_data = dump.load(f)
 
 import pandas as pd
 
