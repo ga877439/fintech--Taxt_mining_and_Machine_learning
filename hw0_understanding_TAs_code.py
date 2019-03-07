@@ -74,21 +74,25 @@ def process_document(document, date):	#document 是 request庫抓取text 之後�
 	
 
 all_data = list()
-import time
-t1 = time.time()	#紀錄爬取所花費的時間
+
+# import time
+# t1 = time.time()	#紀錄爬取所花費的時間
+
 for date in dates:	#dates 是一個list，每個element是 datetime object 範圍從start到stop
 	print('start crawling :', date)
 	res = requests.get('https://news.ltn.com.tw/list/newspaper/politics/' + date)	#爬取每日政治新聞，鏈接規則類似 'https://news.ltn.com.tw/list/newspaper/politics/20181230'
 	doc = bs(res.text, 'lxml')
 	data = process_document(doc, date)	#把bs4 及時間放入該函數後，可以回傳一個list，list中每個element是字典
 	all_data += data	#list 可以相加
-print('Total time consumed in normal way is %s seconds' %( time.time()-t1 )	)	#Total time consumed in normal way is 780.1049983501434 seconds
-print(len(all_data))	#1660
+
+	
+# print('Total time consumed in normal way is %s seconds' %( time.time()-t1 )	)	#Total time consumed in normal way is 780.1049983501434 seconds
+# print(len(all_data))	#1660
 
 	
 #將檔案存成pickle檔案；
-# with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
-	# pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡		
+with open(r'C:\Users\User\Documents\GitHub\fintech--Taxt_mining_and_Machine_learning\data\liberty_times.pkl', 'wb') as f:		#使用二進位寫入模式來保存資料
+	pickle.dump(all_data, f)	#把資料 丟入(dump)進 filehander(f) 裡		
 
 import pandas as pd
 
