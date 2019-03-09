@@ -18,7 +18,8 @@
 * 使用多線程加上aiohttp來[再次加速hw0的爬蟲](https://github.com/ga877439/fintech--Taxt_mining_and_Machine_learning/blob/master/hw0_modification2.py)
 * 看完指定的影片
 
-
+## Week 3
+* 實作演算法--DFS 以及 BFS
 
 
 
