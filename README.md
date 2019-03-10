@@ -19,7 +19,7 @@
 * 看完指定的影片
 
 ## Week 3
-* 實作演算法--DFS 以及 BFS
+* 實作演算法--[DFS、BFS、UCS、A-star](https://github.com/ga877439/AI_class/blob/master/hw1_r06723050/search.py)。
 
 
 
