@@ -21,5 +21,6 @@
 ## Week 3
 * 實作演算法--[DFS、BFS、UCS、A-star](https://github.com/ga877439/AI_class/blob/master/hw1_r06723050/search.py)。
 
-
+## Week 4
+* 完成[HW1](https://github.com/satai1919/Fintech_textmining_machinelearning/tree/master/HW1)
 
